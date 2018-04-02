@@ -1,7 +1,7 @@
 # ~/.vim
 
 ## Installation
-    bash < <( curl -sL http://github.com/ltw/vimfiles/raw/master/install.sh )
+    bash < <( curl -sL http://github.com/mechamanny/vimfiles/raw/master/install.sh )
 
 ## Credits
 
