@@ -24,15 +24,19 @@ map <Leader>sd :FixWhitespace<CR>:w<CR>
 nnoremap j gj
 nnoremap k gk
 
+" Bubble single lines
+nmap <C-J> :m +1 <CR>
+nmap <C-K> :m -2 <CR>
+
 " Reselect visual block after in/outdent
 vnoremap < <gv
 vnoremap > >gv
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" map <C-h> <C-w>h
+" map <C-j> <C-w>j
+" map <C-k> <C-w>k
+" map <C-l> <C-w>l
 
 " Remove annoying F1 help
 inoremap <F1> <ESC>
@@ -73,7 +77,6 @@ let g:tcommentMapLeaderOp1 = '<Leader>c'
 " CtrlP bindings
 let g:ctrlp_map = '<Leader>t'
 map <Leader>l :CtrlPBuffer<CR>
-map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>T :CtrlPClearAllCaches<CR>:CtrlP<CR>
 
 " Markdown bindings
@@ -91,3 +94,6 @@ nmap <Leader>Cc :hi! link Comment Comment<CR>
 
 " Run Syntastic check on current file
 nmap <silent><Leader>sc :SyntasticCheck<CR>
+
+" Use FZF for finding files
+map <Leader>m :FZF<CR>

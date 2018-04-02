@@ -12,7 +12,6 @@ Bundle 'trailing-whitespace'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bufexplorer.zip'
 Bundle 'bufkill.vim'
-Bundle 'upAndDown'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'sjl/vitality.vim'
@@ -45,3 +44,5 @@ Bundle 'JuliaLang/julia-vim'
 
 Plugin 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-dispatch'
+
+Plugin 'rking/ag.vim'

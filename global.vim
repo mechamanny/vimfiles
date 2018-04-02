@@ -18,6 +18,7 @@ set mouse=a                                " Enable the mouse
 set linespace=3                            " Spacing between lines
 set noswapfile                             " Disable creation of *.swp files
 set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
+set term=xterm-256color
 
 " INDENTATION
 "-------------------------------------------------
@@ -74,6 +75,11 @@ set clipboard=unnamed                      " requires compiling with +clipboard 
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
 colorscheme jellybeans-lucas
+
+" FZF setup
+"-------------------------------------------------
+set rtp+=/usr/local/opt/fzf
+Plugin 'junegunn/fzf.vim'
 
 " CUSTOM STATUS LINE
 "-------------------------------------------------

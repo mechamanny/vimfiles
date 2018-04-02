@@ -17,7 +17,7 @@ set statusline+=%*
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 let g:syntastic_haml_checkers = ['haml_lint']
-let g:syntastic_ruby_checkers = ['rubylint']
+let g:syntastic_ruby_checkers = ['rubocop']
 
 " INDENT GUIDES
 "-------------------------------------------------
@@ -32,10 +32,11 @@ let g:quickfixsigns_classes = ['vcsdiff']
 " CTRLP
 "-------------------------------------------------
 let g:ctrlp_clear_cache_on_exit   = 1
-let g:ctrlp_working_path_mode     = 0 " Handle working path manually
+let g:ctrlp_working_path_mode     = "" " Handle working path manually
 let g:ctrlp_dotfiles              = 0 " Ignore all dot/hidden files
 let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_max_files             = 20000
+let g:ctrlp_max_files             = 0
+let g:ctrlp_max_depth             = 40
 let g:ctrlp_custom_ignore         = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\backups$\|\logs$\|\tmp$',
   \ 'file': '',
