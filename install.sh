@@ -8,7 +8,7 @@ then
     (cd ~/.vim && git pull --rebase)
   fi
 else
-  git clone git://github.com/ltw/vimfiles.git ~/.vim
+  git clone https://github.com/mechamanny/vimfiles.git ~/.vim
 fi
 
 if ! [ -d ~/.vim/bundle/vundle ]
