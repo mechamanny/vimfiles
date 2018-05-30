@@ -43,6 +43,10 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+" remap esc to jk
+inoremap jk <Esc>`^
+
+
 " Highlight word at cursor without changing position
 nnoremap <Leader>h *<C-O>
 
